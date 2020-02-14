@@ -51,7 +51,7 @@ export default function GetIcon(name) {
         "thunderstorm": "wi-thunderstorm",
         "snow": "wi-snowflake-cold",
         "mist":"wi-fog",
-        "Celcius":"wi-celcius",
+        "Celsius":"wi-celcius",
         "Fahrenheit": "wi-fahrenheit"
     }
     return icons[name]
