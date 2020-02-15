@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.098d0774.chunk.css",
+    "main.js": "/static/js/main.5816f202.chunk.js",
+    "main.js.map": "/static/js/main.5816f202.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4c195572.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4c195572.js.map",
+    "static/css/2.482e74d0.chunk.css": "/static/css/2.482e74d0.chunk.css",
+    "static/js/2.5b5a852c.chunk.js": "/static/js/2.5b5a852c.chunk.js",
+    "static/js/2.5b5a852c.chunk.js.map": "/static/js/2.5b5a852c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8d172f9d36afef57f067214039c8b388.js": "/precache-manifest.8d172f9d36afef57f067214039c8b388.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.482e74d0.chunk.css.map": "/static/css/2.482e74d0.chunk.css.map",
+    "static/css/main.098d0774.chunk.css.map": "/static/css/main.098d0774.chunk.css.map",
+    "static/js/2.5b5a852c.chunk.js.LICENSE.txt": "/static/js/2.5b5a852c.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/min.png": "/static/media/min.e4a40953.png",
+    "static/media/radio.png": "/static/media/radio.2d3426f8.png",
+    "static/media/semantic.less": "/static/media/semantic.a33e4a32.less",
+    "static/media/weather-icons-wind.css": "/static/media/weathericons-regular-webfont.ecaf8b48.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c195572.js",
+    "static/css/2.482e74d0.chunk.css",
+    "static/js/2.5b5a852c.chunk.js",
+    "static/css/main.098d0774.chunk.css",
+    "static/js/main.5816f202.chunk.js"
+  ]
+}

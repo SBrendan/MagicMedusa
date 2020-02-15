@@ -1,0 +1,15 @@
+.font-large {
+    font-size: 1em;
+}
+
+.font-big {
+    font-size: 3em;
+}
+
+.font-massive {
+    font-size: 1em;
+}
+
+.noMarginBotom {
+    margin-bottom: 0px !important;
+}
