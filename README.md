@@ -1,5 +1,24 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-https://img.shields.io/bitbucket/issues-raw/SBrendan/MagicMedusa https://img.shields.io/bitbucket/pr-raw/SBrendan/MagicMedusa https://img.shields.io/github/repo-size/SBrendan/MagicMedusa https://img.shields.io/github/license/SBrendan/MagicMedusa
+<p align="center">
+    <a href="https://github.com/badges/shields/graphs/contributors" alt="Contributors">
+        <img src="https://img.shields.io/github/contributors/badges/shields" />
+    </a>
+        <a href="https://github.com/SBrendan/MagicMedusa/issues" alt="Issues">
+        <img src="https://img.shields.io/bitbucket/issues-raw/SBrendan/MagicMedusa" />
+    </a>
+    </a>
+        <a href="https://github.com/SBrendan/MagicMedusa/pulls" alt="Pull requests">
+        <img src="https://img.shields.io/bitbucket/pr-raw/SBrendan/MagicMedusa" />
+    </a>
+    </a>
+        <a href="#" alt="Repo size">
+        <img src="https://img.shields.io/github/repo-size/SBrendan/MagicMedusa" />
+    </a>
+        </a>
+        <a href="#" alt="License">
+        <img src="https://img.shields.io/github/license/SBrendan/MagicMedusa" />
+    </a>
+</p> 
 
 # MagicMedusa (FR 🇫🇷)
 ## Qu'est-ce que MagicMedusa ? 
