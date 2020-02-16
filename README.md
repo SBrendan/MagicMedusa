@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://img.shields.io/bitbucket/issues-raw/SBrendan/MagicMedusa https://img.shields.io/bitbucket/pr-raw/SBrendan/MagicMedusa https://img.shields.io/github/repo-size/SBrendan/MagicMedusa https://img.shields.io/github/license/SBrendan/MagicMedusa
 
 # MagicMedusa (FR 🇫🇷)
 ## Qu'est-ce que MagicMedusa ? 
@@ -42,7 +43,7 @@ export default MonComposant;
 case 'MonComposant':
     return <MonComposant MesProps={component.MonComposant.MesProps} />;
 ```
-- Crée les routes si nécéssaire au bon fonctionnement de votre componsant dans le fichier src/routes.js
+- Crée les routes si nécessaires au bon fonctionnement de votre componsant dans le fichier src/routes.js
 ```
 {
     path: "/MonComposant",
@@ -57,6 +58,12 @@ case 'MonComposant':
 },
 ```
 Voilà votre composant est pret à être utiliser
+
+## Contributing
+Les Pull requests sont les bienvenues. Pour la majorité des changements, ouvrer une issues avant afin de pouvoir discuter sur ce que vous voulez modifier merci.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
 # MagicMedusa (EN 🇬🇧)
 ## What is MagicMedusa ?
@@ -115,3 +122,9 @@ case 'MyComponent':
 },
 ```
 All done your component it's ready to use
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
