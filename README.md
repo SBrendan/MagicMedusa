@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 <p align="center">
-    <a href="https://github.com/badges/shields/graphs/contributors" alt="Contributors">
+    <a href="https://github.com/SBrendan/MagicMedusa/graphs/contributors" alt="Contributors">
         <img src="https://img.shields.io/github/contributors/SBrendan/MagicMedusa" />
     </a>
         <a href="https://github.com/SBrendan/MagicMedusa/issues" alt="Issues">
