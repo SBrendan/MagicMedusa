@@ -3,15 +3,17 @@
         "TopLeft": {
             "Météo": {
                 "Localisation": "Cesson-Sevigne",
-                "Temperature": "Celsius",
+                "Temperature": [
+                    "Celsius",
+                    "Kelvin",
+                    "Fahrenheit"
+                ],
                 "ApiKey": "c28d3767fc2c54313f3f17efd55c83f8"
             }
         },
         "TopRight": {
-            "Horloge": {
-                "Time Zone": "Europe/Paris",
-                "Format Heure": "24h",
-                "Format Date": "dddd DD  MMMM YYYY"
+            "Timer": {
+                "Times": "5,10,15"
             }
         },
         "BottomRight": {
