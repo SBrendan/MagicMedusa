@@ -106,7 +106,7 @@ class AdminPage extends React.Component {
                                 key={param}
                                 name={"Config" + position + "." + param + "." + widgetKey}
                                 label={param}
-                                defaultValue={this.state.config.DashboardConfig[position][widgetKey][param] || "default"}
+                                value={this.state.config.DashboardConfig[position][widgetKey][param] || "default"}
                                 options={this.generateFormSelect(value)}
                                 onChange={this.handleChangeForm}
                             />
@@ -118,7 +118,7 @@ class AdminPage extends React.Component {
                                 key={param}
                                 name={"Config" + position + "." + param + "." + widgetKey}
                                 label={param}
-                                defaultValue={value[0]}
+                                value={value[0]}
                                 options={this.generateFormSelect(value)}
                                 onChange={this.handleChangeForm}
                             />
