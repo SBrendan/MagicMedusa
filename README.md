@@ -38,13 +38,13 @@ npm run dev
 
 ## Production
 ```
-//Variable d'environements NODE_ENV=production
+//Variable d'environnement NODE_ENV=production
 npm run build
 npm run server
 ```
 
 ## Création de votre widget
-- Pour ajouter un widget crée un composant React dans le dossier src/components
+- Pour ajouter un widget créer un composant React dans le dossier src/components
 ```
 import React from 'react';
 import {Header} from 'semantic-ui-react';
@@ -61,12 +61,12 @@ class MonComposant extends React.Component {
 
 export default MonComposant;
 ```
-- Puis ajouter le dans le fichier src/service/renderComponent.js
+- Puis ajoutez-le dans le fichier src/service/renderComponent.js
 ```
 case 'MonComposant':
     return <MonComposant MesProps={component.MonComposant.MesProps} />;
 ```
-- Crée les routes si nécessaires au bon fonctionnement de votre componsant dans le fichier src/routes.js
+- Créer les routes si nécessaires au bon fonctionnement de votre composant dans le fichier src/routes.js
 ```
 {
     path: "/MonComposant",
@@ -74,16 +74,16 @@ case 'MonComposant':
     component: MonComposant
 },
 ```
-- Ajouter les paramametre disponible dans le fichier public/widgetConfig.json
+- Ajouter les paramètres disponibles dans le fichier public/widgetConfig.json
 ```
 "MonComposant": {
   "MesProps": "Valeur par defaut"
 },
 ```
-Voilà votre composant est pret à être utiliser
+Voilà, votre composant est prêt à être utilisé.
 
 ## Contributing
-Les Pull requests sont les bienvenues. Pour la majorité des changements, ouvrer une issues avant afin de pouvoir discuter sur ce que vous voulez modifier merci.
+Les Pull requests sont les bienvenues. Pour la majorité des changements, merci d'ouvrir une issue avant afin de pouvoir discuter de ce que vous voulez modifier.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
@@ -108,7 +108,7 @@ npm run server
 ```
 
 ## Create your own widget
-- For create your own widget create a react component and add it in this folder src/components
+- To create your own widget, create a react component and add it in the folder src/components
 ```
 import React from 'react';
 import {Header} from 'semantic-ui-react';
@@ -130,7 +130,7 @@ export default MyComponent;
 case 'MyComponent':
     return <MyComponent MyProps={component.MyComponent.MyProps} />;
 ```
-- Create route if necessary in this folder src/routes.js
+- Create a route if necessary in the folder src/routes.js
 ```
 {
     path: "/MyComponent",
@@ -138,13 +138,13 @@ case 'MyComponent':
     component: MyComponent
 },
 ```
-- Add props available in this file public/widgetConfig.json
+- Add your components props in the file public/widgetConfig.json
 ```
 "MyComponent": {
   "MyProps": "Default Value"
 },
 ```
-All done your component it's ready to use
+All done, your component is ready to use.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
