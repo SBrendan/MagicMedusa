@@ -3,6 +3,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Container, Divider, Form, Grid, Header, Icon, Message } from 'semantic-ui-react';
 import './adminPage.views.css';
+import AWS from 'aws-sdk';
+
+console.log(process.env);
+const s3 = new AWS.S3({
+    accessKeyId: process.env.REACT_APP_ACCESS_KEY,
+    secretAccessKey: process.env.REACT_APP_SECRET_KEY
+})
+
 
 class AdminPage extends React.Component {
     constructor(props) {
@@ -22,8 +30,10 @@ class AdminPage extends React.Component {
     }
 
 
+
     componentDidMount() {
-        Axios.get("db.json")
+
+        Axios.get("https://groupe5-s3.s3.amazonaws.com/db.json")
             .then(res => {
                 var config = res.data
                 this.setState({
@@ -39,7 +49,7 @@ class AdminPage extends React.Component {
                 })
             })
 
-        Axios.get("widgetConfig.json")
+        Axios.get("https://groupe5-s3.s3.amazonaws.com/widgetConfig.json")
             .then(res => {
                 this.setState({
                     WidgetList: res.data
@@ -177,9 +187,13 @@ class AdminPage extends React.Component {
         config.DashboardConfig.BottomLeft = ConfigBottomLeft;
         config.DashboardConfig.BottomRight = ConfigBottomRight;
 
-        Axios.post("/api/save", config).then(
-            console.log("Sauvegarde réussie")
-        )
+        s3.upload({Bucket: 'groupe5-s3', Key: 'db.json', Body: JSON.stringify(config), ACL: 'public-read-write'}, function(err, data) {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log("ok")
+            }
+        })
     }
 
     renderFormPosition() {

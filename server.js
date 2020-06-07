@@ -14,6 +14,7 @@ app.post('/api/save', (req, res) => {
   fs.writeFileSync('build/db.json', content);
 });
 
+
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files
   app.use(express.static(path.join(__dirname, 'build')));

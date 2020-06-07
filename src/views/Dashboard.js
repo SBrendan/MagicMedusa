@@ -1,6 +1,6 @@
 import React from 'react';
-import {Button, Icon, Loader} from 'semantic-ui-react';
-import {Link} from 'react-router-dom';
+import { Button, Icon, Loader } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import RenderComponent from '../service/renderComponent';
 import './dashboard.css'
@@ -8,18 +8,19 @@ import './dashboard.css'
 class Dashboard extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {db: {}};
+        this.state = { db: {} };
     }
 
+
     componentDidMount() {
-        axios.get("db.json")
+        axios.get("https://groupe5-s3.s3.amazonaws.com/db.json")
             .then(res => {
-                this.setState({db: res.data})
+                this.setState({ db: res.data })
             })
     }
 
     renderGrid() {
-        var {db} = this.state;
+        var { db } = this.state;
 
         db.DashboardConfig.map(val => {
             return console.log(val)
@@ -67,8 +68,8 @@ class Dashboard extends React.Component {
                         </div>
                     </div>
                     <div className={"parameter-div"}>
-                        <Button  labelPosition='right' icon as={Link} to="/admin" floated='right'>
-                            <Icon name="cogs"/>
+                        <Button labelPosition='right' icon as={Link} to="/admin" floated='right'>
+                            <Icon name="cogs" />
                              Configuration
                         </Button>
                     </div>
@@ -78,7 +79,7 @@ class Dashboard extends React.Component {
                 </div>
             );
         } else {
-            return <Loader active/>
+            return <Loader active />
         }
     }
 }

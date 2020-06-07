@@ -9,6 +9,7 @@ import * as serviceWorker from './serviceWorker';
 import SwitchRoute from "./SwitchRoutes";
 import RadioPage from "./views/RadioPage";
 const hist = createBrowserHistory();
+require('dotenv').config();
 
 ReactDOM.render(
     <Router history={hist}>
